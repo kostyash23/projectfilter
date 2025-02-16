@@ -1,4 +1,3 @@
-
 interface DocsBadgeProps {
     documentsNumber: number
 }

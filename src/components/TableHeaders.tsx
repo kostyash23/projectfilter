@@ -11,7 +11,7 @@ interface TableHeadersProps {
 
 const TableHeaders: FC<TableHeadersProps> = ({ headers, sortField, sortDirection, onSort }) => {
   return (
-    <div className="grid grid-cols-[48px,140px,200px,65px,65px,1.7fr,1fr,110px,1fr,1fr] gap-[17px] text-[14px] items-center">
+    <div className="grid grid-cols-[48px,140px,200px,65px,65px,1.7fr,1fr,110px,1fr,1fr,] gap-[17px] text-[14px] items-center">
       {headers.map(({ field, label }) => {
         return (
           <div key={field} className="flex items-center text-sm font-medium text-gray">

@@ -1,11 +1,11 @@
 import './App.css'
-import List from './components/List'
+import ItemList from './components/ItemList'
 
 function App() {
  
 
   return (
-    <List />
+    <ItemList />
   )
 }
 

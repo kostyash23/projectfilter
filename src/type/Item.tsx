@@ -1,3 +1,4 @@
+import { JSX } from "react/jsx-runtime";
 
 export enum StatusFilds {
   ON_SALE = 'on_sale',
@@ -45,5 +46,10 @@ export enum SortDirection {
   DESC = "desc",
 }
 
+export interface ColumnConfig {
+  key: string;
+  className?: string;
+  render: (item: Item) => JSX.Element | string | number;
+}
 
 export type SortField = keyof Item;
