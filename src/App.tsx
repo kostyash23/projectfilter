@@ -5,11 +5,7 @@ function App() {
  
 
   return (
-    <div>
-      <List/>
-    </div>
-      
-    
+    <List />
   )
 }
 

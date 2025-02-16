@@ -1,9 +1,19 @@
+
+export enum StatusFilds {
+  ON_SALE = 'on_sale',
+  SOLD_OUT = 'sold_out',
+  NOT_FOR_SALE = 'not_for_sale',
+  DRAFT = 'draft',
+  ON_DIGITALIZATION = 'on_digitalization',
+  READY_FOR_VERIFICATION = 'ready_for_verification',
+  PUBLISHED = 'published',
+}
 export interface Item {
     id: number;
     artwork_name: string;
     documents_number: number;
     has_notifications: boolean;
-    status: 'on_sale' | 'sold_out' | 'not_for_sale' | 'draft';
+  status: StatusFilds;
     artist_name: string;
     creation_year: number;
     main_photo: MainPhoto;
@@ -30,6 +40,10 @@ export interface Transformation {
     filename_disk: string;
   }
 
+export enum SortDirection {
+  ASC = "asc",
+  DESC = "desc",
+}
 
 
 export type SortField = keyof Item;
